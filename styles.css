@@ -7,23 +7,23 @@
 }
 
 body {
-  /* background: steelblue; */
+  background: #11324D;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 .container {
-  /* display: grid; */
-  /* grid-template-rows: 20% 140% 20%; */
-  /* background: thistle; */
+  font-family: 'Poppins', sans-serif;
 }
 
 header {
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
   align-items: center;
-  /* background: sandybrown; */
-  background: #eeeeee;
+  background: #11324D;
+  color: #ffffff;
   width: 100%;
-  padding: 1.5rem 0rem;
+  padding: 1rem 0rem;
 }
 
 header ul {
@@ -32,33 +32,40 @@ header ul {
   justify-content: space-evenly;
 }
 
+header > a {
+  text-decoration: none;
+  color: #eeeeee;
+}
+
 ul li {
   list-style: none;
   padding: 10px;
 }
 
 main {
-  background: dodgerblue;
+  background: #C1CFC0;
   display: grid;
   grid-template-columns: 6fr 1fr;
-  grid-gap: 5px;
-  padding: 5rem .625rem;
+  grid-gap: 10px;
+  padding: 5rem .5rem;
+  color: #ffffff;
 }
 
 article {
   width: 100%;
-  background: #ffffff;
-  /* border: 1px dashed red; */
+  background: #6B7AA1;
+  border-radius: 10px;
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: .5fr 1fr 1fr 1fr;
-  grid-gap: 5px;
+  /* grid-gap: 5px; */
+  padding: 1rem .625rem;
 }
 
 article h2 {
-  padding: 5px;
+  padding: 2rem;
   grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column-end: 3;
 }
 
 .section1 {
@@ -78,31 +85,35 @@ article h2 {
 
 .aside_inside {
   grid-column: 2 / 3;
-  grid-row: 1 / 5;
+  grid-row: 2 / 5;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 5px;
 }
 
 section {
-  /* border: 1px dashed magenta; */
-  /* background: olivedrab; */
+  border-radius: 5px;
   margin: 5px;
   padding: 32px 5px;
+  background: #E7E0C9;
+  color: #11324D;
 }
 
 aside {
   width: 100%;
-  background: #ffffff;
-  /* border: 1px dashed black; */
+  border-radius: 10px;
+  background: #6B7AA1;
 }
 
 .outside {
   padding: 10px;
+  background: #6B7AA1;
+  height: fit-content;
 }
 
 footer {
-  background: dodgerblue;
+  background: #11324D;
+  color: #ffffff;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
